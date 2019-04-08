@@ -11,3 +11,6 @@
 li{
 position: absolute;
 }
+.display{
+display: none;
+}
