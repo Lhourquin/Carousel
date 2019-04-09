@@ -9,7 +9,10 @@
     text-decoration: none; 
 }
 li{
-position: absolute;
+text-align: center;
+}
+img{
+width : 70vw;
 }
 .display{
 display: none;
