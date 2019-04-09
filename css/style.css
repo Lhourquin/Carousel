@@ -11,9 +11,9 @@
 li{
 text-align: center;
 }
-img{
+.carousel{
 width : 70vw;
 }
-.display{
+.displayNone{
 display: none;
 }
