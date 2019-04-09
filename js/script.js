@@ -1,19 +1,14 @@
 'use strict';
 
-let ul = document.getElementsByTagName("ul")[0];
-let previous = document.getElementsByClassName('previous');
-let next = document.getElementsByClassName('next');
-let active = document.querySelector('img.carousel');
 
+let listImg = document.getElementsByClassName('imgCarousel');
+let count = 0;
 
-
-
-
-
-/*ul.onclick = function (event){
-    let target = event.target;
-    console.log(target);
-    target.classList.toggle('.display-none');
-
+function imgNext() {
     
-};       */
+    listImg[count].classList.add('displayNone');
+    listImg[count +1].classList.remove('displayNone');
+
+    ++ count;    
+        
+    }
