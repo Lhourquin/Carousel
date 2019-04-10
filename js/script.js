@@ -4,11 +4,12 @@
 let listImg = document.getElementsByClassName('imgCarousel');
 let count = 0;
 let length = listImg.length -1;
-//let minLength = length - 1;
+let previous = document.getElementsByClassName('previous');
+let next = document.getElementsByClassName('next');
+let ul = document.getElementsByTagName('ul')[0];
 
 
 function imgNext() {
-    console.log(count);
     if(count >= length ){
       listImg[length].classList.add('displayNone');
       count = 0;
@@ -19,21 +20,32 @@ function imgNext() {
     
       ++count;
     }
-    console.log(count);
 }
 
 function imgPrevious (){
-  console.log(count);
   if(count <= 0){
     listImg[count].classList.add('displayNone');
     count = count+length;
-    listImg[count ].classList.remove('displayNone');
-    listImg[count -1].classList.add('displayNone') 
+    listImg[count].classList.remove('displayNone');
+    listImg[count-1].classList.add('displayNone') 
     
   }else{
   listImg[count].classList.add('displayNone');
   listImg[count-1].classList.remove('displayNone');
   -- count;
-console.log(count);
   }
   }
+
+ul.addEventListener ('click', function (event){
+
+    
+  let target = event.target;
+
+    if(target != ('next') || ('previous')){
+      return;
+    }else if(target = ('next')){
+      imgNext();
+    }else if(target = ('previous')){
+      imgPrevious();
+    }
+});
