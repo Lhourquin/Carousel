@@ -29,12 +29,10 @@ function imgPrevious (){
     listImg[count + length].classList.remove('displayNone');
     listImg[count + length-1].classList.add('displayNone') 
     
-  }
-console.log(count);
- /* }else{
+  }else{
   listImg[count].classList.add('displayNone');
   listImg[count-1].classList.remove('displayNone');
   -- count;
 console.log(count);
-  }*/
+  }
   }
