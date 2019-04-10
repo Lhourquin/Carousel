@@ -3,10 +3,7 @@
 
 let listImg = document.getElementsByClassName('imgCarousel');
 let count = 0;
-let length = listImg.length -1;
-let previous = document.getElementsByClassName('previous');
-let next = document.getElementsByClassName('next');
-let ul = document.getElementsByTagName('ul')[0];
+
 
 
 function imgNext() {
@@ -35,17 +32,3 @@ function imgPrevious (){
   -- count;
   }
   }
-
-ul.addEventListener ('click', function (event){
-
-    
-  let target = event.target;
-
-    if(target != ('next') || ('previous')){
-      return;
-    }else if(target = ('next')){
-      imgNext();
-    }else if(target = ('previous')){
-      imgPrevious();
-    }
-});
