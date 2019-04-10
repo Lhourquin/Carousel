@@ -4,6 +4,8 @@
 let listImg = document.getElementsByClassName('imgCarousel');
 let count = 0;
 let length = listImg.length -1;
+let minLength = length - 1;
+
 
 function imgNext() {
     console.log(count);
@@ -19,3 +21,14 @@ function imgNext() {
     }
     console.log(count);
 }
+
+function imgPrevious (){
+  
+  listImg[count].classList.add('displayNone');
+  listImg[count-1].classList.remove('displayNone');
+  -- count;
+console.log(count);
+  }
+
+  
+
