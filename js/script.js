@@ -3,6 +3,7 @@
 
 let listImg = document.getElementsByClassName('imgCarousel');
 let count = 0;
+let length = listImg.length -1;
 
 
 
