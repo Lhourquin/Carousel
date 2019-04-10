@@ -1,11 +1,31 @@
+body{
+display:grid;
+grid-template-areas: ". h1 ."
+                     "previous  carousel  next";
 
+}
+h1{
+grid-area: h1;
+}
+ul{
+grid-area: carousel;
+}
 li{
-text-align: center;
 list-style-type : none;
+text-align:center;
 }
 .imgCarousel{
 width : 70vw;
 }
 .displayNone{
 display: none;
+}
+.icon{
+font-size: 3rem;
+}
+i.previous{
+grid-area: previous;
+}
+i.next{
+grid-area: next;
 }
