@@ -25,9 +25,10 @@ function imgNext() {
 function imgPrevious (){
   console.log(count);
   if(count <= 0){
-
-    listImg[count + length].classList.remove('displayNone');
-    listImg[count + length-1].classList.add('displayNone') 
+    listImg[count].classList.add('displayNone');
+    count = count+length;
+    listImg[count ].classList.remove('displayNone');
+    listImg[count -1].classList.add('displayNone') 
     
   }else{
   listImg[count].classList.add('displayNone');
