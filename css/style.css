@@ -9,6 +9,7 @@ text-align:center;
 }
 .imgCarousel{
 width : 70vw;
+height: 70vh;
 }
 .displayNone{
 display: none;
