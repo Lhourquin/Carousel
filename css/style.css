@@ -1,6 +1,10 @@
 
+html{
+background-color : #250001;
+height: 100vh;
+}
 .main{
-margin-top: 5vh;
+margin-top: 20vh;
 }
 ul{
 text-align: center;
@@ -12,15 +16,18 @@ text-align:center;
 }
 .imgCarousel{
 width : 70vw;
-height: 70vh;
+height: 60vh;
+size: cover;
 }
 .displayNone{
 display: none;
 }
 i.previous{
 margin-top: 30vh;
+background-color: #FCBA04;
 }
 i.next{
 margin-top: 30vh;
+background-color: #FCBA04;
 
 }
