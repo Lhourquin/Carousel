@@ -1,4 +1,7 @@
 
+.main{
+margin-top: 5vh;
+}
 ul{
 text-align: center;
 width : 70vw;
@@ -13,8 +16,6 @@ height: 70vh;
 }
 .displayNone{
 display: none;
-}
-.icon{
 }
 i.previous{
 margin-top: 30vh;
