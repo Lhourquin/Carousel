@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <meta charset="UTF-8">
   <title>Carousel</title>
 </head>
 <body>
-<h1>Carousel</h1>
-<i onclick="imgPrevious()" class="fas fa-chevron-left previous icon"></i>
-<i onclick="imgNext()" class="fas fa-chevron-right next icon"></i>
-<ul>
+<div class = 'block'>
+  <div class= 'container'>
+    <div class = 'columns'>
+<i onclick="imgPrevious()" class="fas fa-chevron-left previous icon button is-large column"></i>
+<ul class = 'column is-two-thirds'>
     
   <li><img class="imgCarousel " src="img/astronomy-beautiful-clouds-355465.jpg" alt=""></li>
   <li><img class="imgCarousel displayNone" src="img/beach-cliffs-evening-977736.jpg" alt=""></li>
   <li><img class="imgCarousel displayNone" src="img/beach-dawn-dusk-1144176.jpg" alt=""></li>
   <li><img class="imgCarousel displayNone" src="img/fog-foggy-forest-158607.jpg" alt=""></li>
 </ul>
-
-
+<i onclick="imgNext()" class="fas fa-chevron-right next icon button is-large column"></i>
+</div>
+</div>
+</div>
  <script type="text/javascript" src="js/script.js"></script>  
 </body>
 </html>
